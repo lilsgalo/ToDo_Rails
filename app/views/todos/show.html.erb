@@ -1,0 +1,7 @@
+<%= render partial:"flash" %>
+
+<h3 class="card-title"><%= @todo.titulo %></h3>
+<p class="card-text"><%= @todo.descricao %></p>
+
+<%= link_to "Voltar", root_path, class:"btn btn-default" %>
+<%= link_to "Editar", edit_todo_path(@todo), class:"btn btn-primary" %>
